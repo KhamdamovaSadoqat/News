@@ -2,7 +2,6 @@ package com.example.news.data.repository
 
 import androidx.lifecycle.LiveData
 import com.example.news.data.database.FavouriteArticlesDao
-import com.example.news.data.model.ArticlesItem
 import com.example.news.data.model.FavouriteArticles
 
 class FavouriteRepository(private val dataSource: FavouriteArticlesDao) {

@@ -2,29 +2,15 @@ package com.example.news.ui.main.home
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.news.R
 import com.example.news.data.model.ArticlesItem
 import com.example.news.databinding.ItemArticleBinding
 import com.example.news.utils.ImageDownloader
-import android.graphics.Bitmap
-import android.graphics.Canvas
-
-import android.graphics.drawable.BitmapDrawable
-
-import android.graphics.drawable.Drawable
-import android.graphics.drawable.Drawable.ConstantState
-import androidx.core.graphics.drawable.DrawableCompat
-
-import android.os.Build
-import android.view.View
 import com.example.news.utils.DateTimeUtils
-
 
 class HomeAdapter(private val itemClickListener: (ArticlesItem) -> Unit) :
     RecyclerView.Adapter<HomeAdapter.VH>() {

@@ -10,6 +10,5 @@ object Keys {
     const val TOKEN_EXPIRY = "token_expiry"
     const val LAST_UPDATE_PROMPT = "last_time_prompt"
     const val CARD_NUMBER = "card_number"
-    const val SHOULD_CHECK_FOR_UPDATE = "should_check_for_update"
 
 }

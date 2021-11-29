@@ -1,7 +1,6 @@
 package com.example.news.data.repository
 
 import androidx.lifecycle.MutableLiveData
-import com.example.news.data.database.FavouriteArticlesDao
 import com.example.news.data.model.Article
 import com.example.news.data.model.remote.Resource
 import com.example.news.data.model.remote.Status

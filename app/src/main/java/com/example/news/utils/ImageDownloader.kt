@@ -58,28 +58,4 @@ object ImageDownloader {
 
         }
     }
-
-    fun getImage(
-        context: Context,
-        url: String,
-        onResponse: ((Bitmap) -> Unit)
-    ) {
-        val uri = Uri.parse(url)
-        Glide.with(context)
-            .asBitmap()
-            .load(uri)
-            .placeholder(R.drawable.ic_image_placeholder)
-            .error(R.drawable.ic_loading_error)
-            .into(object : CustomTarget<Bitmap>() {
-                override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                    onResponse.invoke(resource)
-                }
-
-                override fun onLoadCleared(placeholder: Drawable?) {
-
-                }
-
-            })
-
-    }
 }
