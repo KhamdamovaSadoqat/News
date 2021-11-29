@@ -2,19 +2,19 @@ package com.example.news.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Article(
+data class SearchArticle(
 
 	@field:SerializedName("totalResults")
 	val totalResults: Int,
 
 	@field:SerializedName("articles")
-	val articles: List<ArticlesItem>,
+	val articles: List<SearchArticlesItem>,
 
 	@field:SerializedName("status")
 	val status: String
 )
 
-data class Source(
+data class SearchSource(
 
 	@field:SerializedName("name")
 	val name: String,
@@ -23,7 +23,7 @@ data class Source(
 	val id: String
 )
 
-data class ArticlesItem(
+data class SearchArticlesItem(
 
 	@field:SerializedName("publishedAt")
 	val publishedAt: String,
@@ -38,7 +38,7 @@ data class ArticlesItem(
 	val description: String,
 
 	@field:SerializedName("source")
-	val source: Source,
+	val source: SearchSource,
 
 	@field:SerializedName("title")
 	val title: String,

@@ -28,23 +28,12 @@ class ApiClient {
                     val request = chain.request().newBuilder().apply {
                         addHeader("language", Constants.language)
                     }.build()
-
-//                    Log.d(
-//                        "--------------",
-//                        "getApiClient: ${request.body()?.let { bodyToString(it) }}"
-//                    )
-//
-//                    Log.d(
-//                        "--------------",
-//                        "intercept: ${request.url()}   ${request.body().toString()}" +
-//                                request.headers().toString()
-//                    )
                     chain.proceed(request)
                 }
                 .build()
             if (retrofit == null) {
                 retrofit = Retrofit.Builder()
-                    .baseUrl(Constants.BASE_API_URL)
+                    .baseUrl("https://newsapi.org")
                     .client(okHttpClient)
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

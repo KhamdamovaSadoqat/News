@@ -14,12 +14,12 @@
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.example.news.ui.main.search.SearchFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_favourites"
         android:name="com.example.news.ui.main.favourites.FavouritesFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_favourites"
         tools:layout="@layout/fragment_favourites" />
 </navigation>

@@ -1,13 +1,27 @@
 package com.example.news.ui.main.favourites
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.example.news.data.database.FavouriteArticlesDao
+import com.example.news.data.model.FavouriteArticles
+import com.example.news.data.repository.FavouriteRepository
+import com.example.news.ui.base.BaseVM
 
-class FavouritesViewModel : ViewModel() {
+class FavouritesViewModel(dataSource: FavouriteArticlesDao) : BaseVM() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+    private val favouriteArticle: LiveData<List<FavouriteArticles>>
+    private val repo = FavouriteRepository(dataSource)
+
+    init{
+        favouriteArticle = repo.getFavouriteArticles()
     }
-    val text: LiveData<String> = _text
+
+    fun getFavouriteArticle(): LiveData<List<FavouriteArticles>>{
+        return favouriteArticle
+    }
+
+    fun removeAll(){
+        repo.removeAll()
+    }
+
+
 }

@@ -1,24 +1,23 @@
 package com.example.news.data.model
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "FavouriteArticles")
 data class FavouriteArticles(
+
     @field:SerializedName("publishedAt")
     val publishedAt: String? = null,
 
     @field:SerializedName("author")
-    val author: Any? = null,
+    var author: String? = null,
 
     @field:SerializedName("urlToImage")
-    val urlToImage: String? = null,
+    val urlToImage: String? = "",
 
     @field:SerializedName("description")
-    val description: String? = null,
-
-    @field:SerializedName("source")
-    val source: Source? = null,
+    val description: String? = "",
 
     @field:SerializedName("title")
     val title: String? = null,
@@ -27,5 +26,8 @@ data class FavouriteArticles(
     val url: String? = null,
 
     @field:SerializedName("content")
-    val content: String? = null
-)
+    val content: String? = null,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0
+
+    )

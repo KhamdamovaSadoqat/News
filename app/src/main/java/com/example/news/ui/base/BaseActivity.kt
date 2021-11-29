@@ -9,6 +9,7 @@ import android.view.View
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import androidx.annotation.LayoutRes
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
@@ -28,6 +29,7 @@ import java.util.*
 abstract class BaseActivity<T : ViewDataBinding, V : BaseVM> : AppCompatActivity(), BaseMethods {
     private val gson: Gson = Gson()
     lateinit var prefs: PrefsHelper
+    private var progress : AlertDialog? = null
 
     companion object {
         const val RC_UPDATE = 1
@@ -122,6 +124,22 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseVM> : AppCompatActivity
                 .show()
         }
     }
+
+//    override fun showProgressDialog(){
+//        if (isFinishing.not()) {
+//            MaterialAlertDialogBuilder(this, R.layout.dialog_progress)
+//                .show()
+////         progress = AlertDialog.Builder(this)
+////            .setView(R.layout.dialog_progress)
+////            .show()
+//        }
+//    }
+//
+//    override fun dismissProgressDialog() {
+////        if (progress != null) {
+////            progress!!.dismiss()
+////        }
+//    }
 
     override fun hideKeyboard() {
         // Check if no view has focus:

@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">News</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_favourites">Favourites</string>
 
     <string name="msg_no_network">Невозможно подключиться к Интернету</string>
     <string name="msg_unknown_error">Неизвестная ошибка.</string>
     <string name="action_ok">OK</string>
     <string name="msg_cannot_connect_to_server">Наши серверы проходят техническое обслуживание и ремонт. Пожалуйста, попробуйте позже.</string>
 
+    <string name="example_article_header">A fake press release claiming Kroger accepts crypto reached the retailer’s own webpage</string>
+    <string name="example_article_author">Richard Lawler</string>
+    <string name="icon">icon</string>
 </resources>

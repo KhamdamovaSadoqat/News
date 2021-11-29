@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
+import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import com.example.news.R
 import com.example.news.data.local.PrefsHelper
 import com.google.gson.Gson
 
@@ -90,6 +92,14 @@ abstract class BaseFragment<T: ViewDataBinding, V: BaseVM>: Fragment(), BaseMeth
         (activity as BaseActivity<*, *>).showBasicDialog(message, title)
     }
 
+//    override fun showProgressDialog() {
+//        (activity as BaseActivity<*, *>).showProgressDialog()
+//    }
+//
+//    override fun dismissProgressDialog() {
+//
+//    }
+
     override fun showBasicDialog(message: Spanned?, title: String?) {
         (activity as BaseActivity<*, *>).showBasicDialog(message, title)
     }
@@ -117,4 +127,5 @@ abstract class BaseFragment<T: ViewDataBinding, V: BaseVM>: Fragment(), BaseMeth
     override fun setStatusBarBackgroundHeight(statusBarBackground: View) {
         (activity as BaseActivity<*, *>).setStatusBarBackgroundHeight(statusBarBackground)
     }
+
 }

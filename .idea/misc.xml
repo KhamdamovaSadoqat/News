@@ -3,11 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_bookmark.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_bookmark_border.xml" value="0.2703125" />
         <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_home.xml" value="0.2703125" />
         <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_image_placeholder.xml" value="0.2703125" />
         <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_loading_error.xml" value="0.2703125" />
         <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2703125" />
-        <entry key="..\:/projects/Android/News/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_post_add.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/ic_search.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/drawable/selector.xml" value="0.2703125" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/dialog_progress.xml" value="0.23333333333333334" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/fragment_favourites.xml" value="0.25416666666666665" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/fragment_home.xml" value="0.13240740740740742" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/fragment_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/item_article.xml" value="0.264" />
+        <entry key="..\:/projects/Android/News/app/src/main/res/layout/snackbar_internet.xml" value="0.25416666666666665" />
         <entry key="..\:/projects/Android/News/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

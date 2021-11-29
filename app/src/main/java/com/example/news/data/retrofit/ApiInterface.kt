@@ -1,36 +1,20 @@
 package com.example.news.data.retrofit
 
+import com.example.news.data.model.Article
 import io.reactivex.Observable
+import retrofit2.Call
 import retrofit2.http.*
-
+import retrofit2.http.GET
 
 interface ApiInterface {
 
-    //Get
-    //post
+    //2f6ea8d8dca7458d8406058209fd0dac mekhrilloeva
+    @GET("/v2/top-headlines?country=ru&apiKey=2f6ea8d8dca7458d8406058209fd0dac")
+    fun getNewsRu(): Observable<Article>
 
-//    @GET
-//    fun getHuquqiyBilimlarSinovi(
-//        @Url url: String,
-//        @Header("Authorization") token: String
-//    ): Observable<HuquqiyBilimlarSinovi>
+    @GET("/v2/everything?apiKey=2f6ea8d8dca7458d8406058209fd0dac")
+    fun getSearchResult(
+        @Query("q") search: String
+    ): Observable<Article>
 
-//    @FormUrlEncoded
-//    @POST("HERE SHOULD BE URL")
-//    fun sendComment(
-//        @Field("SOME FIELD") id: Int,
-//        @Field("SOME FIELS") answer: String,
-//        @Header("Authorization") token: String
-//    ): Observable<SUCCESSTEST>
-
-//    @GET("http://45.137.148.124:8080/api/v1/registration/admin@admin.com")
-//    fun isRegistrationFlowAvailable(
-//        @Header("username") userName: String
-//    ): Observable<IsRegistrationFlowAvailable>
-//
-//    @FormUrlEncoded
-//    @POST("http://45.137.148.124:8080/api/v1/registration/request")
-//    fun requestMail(
-//        @Field("email")email: String
-//    ): Observable<ResponseOfRequestEmail>
 }
